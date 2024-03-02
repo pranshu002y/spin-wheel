@@ -1,0 +1,203 @@
+ *{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+ }
+
+ .row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+ }
+
+ .arrow {
+   transform: rotate(90deg);
+   width: 250px;
+   position: absolute;
+   top: 90px;
+ }
+
+ #spin-btn {
+   background: transparent;
+ }
+
+ .float {
+   animation: float 1s infinite;
+ }
+
+
+
+ .spin-btn {
+   height: 200px;
+   position: relative;
+   top: 210px;
+ }
+
+ #spinner {
+   height: 500px;
+   position: relative;
+   /* display: none; */
+   z-index: 0;
+   /* left: 300px; */
+ }
+
+ .pin {
+   height: 100px;
+   top: 50px;
+   left: 210px;
+   z-index: 2;
+   position: relative;
+ }
+
+
+
+ .spin {
+   animation: spin 15s infinite;
+ }
+
+ .pop-up-content {
+   color: #ffffff;
+   background: rgb(0, 0, 0);
+   padding: 1rem 2rem;
+   border-radius: 0.5rem;
+   position: absolute;
+right: -80px;
+bottom: 10px;
+   font-family: "Abril Fatface", cursive;
+   display: none;
+
+ }
+
+
+
+ .pop-up-content h1 {
+   font-size: 2rem;
+ }
+
+ .pop-up-para {
+   text-align: center;
+   font-size: 2rem;
+   border: 0.5rem dotted #ffd81f;
+ }
+
+ .wheel-stand {
+   position: relative;
+  left: 90px;
+   z-index:-1;
+   height: 120px;
+   bottom: 10px;
+ }
+
+
+ .col-1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   height: 100vh;
+   width: 100%;
+ }
+ .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100vh;
+  width: 100%;
+}
+
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0);
+   }
+
+   50% {
+     transform: rotate(3600deg);
+   }
+
+   100% {
+     transform: rotate(90deg);
+   }
+ }
+
+
+
+ .circle {
+   width: 100%;
+   height: 100vh;
+   background-color: grey;
+   border-radius: 50%;
+   border: 15px solid black;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: conic-gradient(#ef7a0c 0deg,
+       #ef7a0c 72deg,
+       #9253f0 72deg,
+       #9253f0 144deg,
+       #00ffff 144deg,
+       #00ffff 216deg,
+       #56c556 216deg,
+       #56c556 288deg,
+       rgb(233, 129, 202) 288deg,
+       rgb(231, 135, 197) 360deg)
+ }
+
+
+
+ .circle .one {
+   position: absolute;
+   left: 55%;
+   top: 20%;
+   transform: rotate(35deg);
+ }
+
+ .circle .two {
+   left: 14%;
+   position: absolute;
+   top: 15%;
+   transform: rotate(-42deg);
+
+ }
+
+ .circle .three {
+   left: -7%;
+   bottom: 35%;
+   position: absolute;
+   transform: rotate(-111deg);
+
+ }
+
+ .circle .four {
+   left: 24%;
+   position: absolute;
+   bottom: 10%;
+   transform: rotate(-180deg);
+ }
+
+ .circle .five {
+   left: 60%;
+   top: 55%;
+   position: absolute;
+   transform: rotate(106deg);
+
+ }
+
+ .one>img, .two>img, .three>img, .four>img, .five>img {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+
+}
+
+.mid{
+  border-radius: 50%;
+  /* border: 2px solid red; */
+  height: 80px;
+  object-fit: contain;
+}
