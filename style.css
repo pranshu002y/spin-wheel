@@ -318,6 +318,14 @@ bottom: 10px;
     top: -27px;
   }
 
+  #spinner {
+    height: 500px;
+    position: relative;
+    /* display: none; */
+    z-index: 0;
+    width: 500px;
+  }
+
   .wheel-stand {
     width: 300px;
     position: absolute;
@@ -405,6 +413,98 @@ bottom: 10px;
   position: absolute;
   right: -29px;
   bottom: -377px;
+  font-family: "Abril Fatface", cursive;
+  display: none;
+}
+
+}
+
+/* Media query for 320px */
+@media screen and (max-width: 320px) {
+  .pin {
+    width: 100px;
+    position: absolute;
+    left: 115px;
+    /* border: 2px solid wheat; */
+    top: -50px;
+}
+
+  #spinner {
+    height: 300px;
+    position: relative;
+    z-index: 0;
+    width: 300px;
+}
+
+.wheel-stand {
+  width: 263px;
+  position: absolute;
+  left: 33px;
+  top: 287px;
+}
+
+.spin-btn {
+  height: 129px;
+  position: relative;
+  top: 46px;
+  left: 44px;
+}
+
+ 
+.circle .one {
+  position: absolute;
+  left: 51%;
+  font-size: 10px;
+  top: 17%;
+  transform: rotate(39deg);
+}
+ 
+.circle .two {
+  left: 10%;
+  position: absolute;
+  top: 18%;
+  font-size: 10px;
+  transform: rotate(-45deg);
+}
+ 
+.circle .three {
+  left: -3%;
+  bottom: 39%;
+  font-size: 10px;
+  position: absolute;
+  transform: rotate(-98deg);
+}
+ 
+.circle .four {
+  left: 32%;
+  position: absolute;
+  bottom: 10%;
+  font-size: 10px;
+  transform: rotate(-177deg);
+}
+ 
+.circle .five {
+    left: 71%;
+    top: 57%;
+    font-size: 10px;
+    position: absolute;
+    transform: rotate(105deg);
+}
+ 
+  .one>img, .two>img, .three>img, .four>img, .five>img {
+   display: none;
+ 
+ }
+
+ 
+.pop-up-content {
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+  padding: -7rem 2rem;
+  /* border-radius: 0.5rem; */
+  position: absolute;
+  right: -47px;
+  bottom: -250px;
   font-family: "Abril Fatface", cursive;
   display: none;
 }
