@@ -3,7 +3,9 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
  }
-
+body{
+  background-image: url("https://images.unsplash.com/photo-1708806015447-6f029c1d6386?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
  .row{
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@ padding: 0;
   justify-content: center;
   height: 100vh;
   width: 100%;
+  
  }
 
  .arrow {
@@ -33,7 +36,7 @@ padding: 0;
  .spin-btn {
    height: 200px;
    position: relative;
-   top: 210px;
+   top: 300px;
  }
 
  #spinner {
@@ -197,7 +200,30 @@ bottom: 10px;
 
 .mid{
   border-radius: 50%;
-  /* border: 2px solid red; */
+
   height: 80px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 786px) {
+  .col-md-6 {
+    flex-direction: column;
+  }
+}
+
+/* Media query for 420px */
+@media screen and (max-width: 420px) {
+  .pin {
+    width: 70px; /* Adjust size as needed */
+  }
+
+  .wheel-stand {
+    width: 70px; 
+    position: absolute;
+    left:10px;
+    top: 20px;
+    border: 2px solid red;
+  }
+}
+
+
