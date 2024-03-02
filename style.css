@@ -5,6 +5,7 @@ padding: 0;
  }
 body{
   background-image: url("https://images.unsplash.com/photo-1708806015447-6f029c1d6386?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  margin: 20px;
 }
  .row{
   display: flex;
@@ -204,23 +205,107 @@ bottom: 10px;
   height: 80px;
   object-fit: contain;
 }
-
+/* Media query for 786px */
 @media screen and (max-width: 786px) {
   .pin {
-    width: 70px; /* Adjust size as needed */
-  }
-
-  .wheel-stand {
-    width: 70px;
+    width: 161px;
     position: absolute;
-    left: 10px;
-    top: 20px;
-  }
+    left: 174px;
+    top: -47px;
+}
 
-  .spin-btn {
-    height: 200px;
-    position: relative;
-  }
+.wheel-stand {
+  width: 300px;
+  position: absolute;
+  left: 104px;
+  top: 486px;
+}
+
+.spin-btn {
+  height: 174px;
+  position: relative;
+  top: 155px;
+  left: 3px;
+}
+
+ 
+.circle .one {
+  position: absolute;
+  left: 49%;
+  top: 17%;
+  transform: rotate(39deg);
+}
+ 
+.circle .two {
+  left: 12%;
+  position: absolute;
+  top: 12%;
+  transform: rotate(-43deg);
+}
+ 
+.circle .three {
+  left: -5%;
+  bottom: 36%;
+  position: absolute;
+  transform: rotate(-107deg);
+}
+
+
+ 
+.circle .four {
+  left: 18%;
+  position: absolute;
+  bottom: 6%;
+  transform: rotate(-180deg);
+}
+ 
+.circle .five {
+  left: 61%;
+  top: 52%;
+  position: absolute;
+  transform: rotate(105deg);
+}
+ 
+  .one>img, .two>img, .three>img, .four>img, .five>img {
+   width: 100%;
+   height: 50px;
+   object-fit: contain;
+ 
+ }
+
+ .circle {
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+  border-radius: 50%;
+  border: 15px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(#ef7a0c 0deg,
+      #ef7a0c 72deg,
+      #9253f0 72deg,
+      #9253f0 144deg,
+      #00ffff 144deg,
+      #00ffff 216deg,
+      #56c556 216deg,
+      #56c556 288deg,
+      rgb(233, 129, 202) 288deg,
+      rgb(231, 135, 197) 360deg)
+}
+ 
+.pop-up-content {
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  /* border-radius: 0.5rem; */
+  position: absolute;
+  right: 14px;
+  bottom: -373px;
+  font-family: "Abril Fatface", cursive;
+  display: none;
+}
 }
 
 /* Media query for 420px */
