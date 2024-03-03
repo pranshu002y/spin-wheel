@@ -206,12 +206,20 @@ bottom: 10px;
   object-fit: contain;
 }
 /* Media query for 786px */
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .pin {
     width: 161px;
     position: absolute;
     left: 174px;
     top: -47px;
+}
+
+#spinner {
+  height: 500px;
+  position: relative;
+  /* display: none; */
+  z-index: 0;
+  width: 500px;
 }
 
 .wheel-stand {
@@ -308,6 +316,96 @@ bottom: 10px;
 }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pin {
+    width: 159px;
+    position: absolute;
+    left: 184px;
+    top: -52px;
+}
+
+#spinner {
+  height: 500px;
+  position: relative;
+  /* display: none; */
+  z-index: 0;
+  width: 500px;
+}
+
+.wheel-stand {
+  width: 300px;
+  position: absolute;
+  left: 114px;
+  top: 489px;
+}
+
+.spin-btn {
+  height: 174px;
+  position: relative;
+  top: 155px;
+  left: 3px;
+}
+
+ 
+.circle .one {
+  position: absolute;
+  left: 49%;
+  top: 17%;
+  transform: rotate(39deg);
+}
+ 
+.circle .two {
+  left: 12%;
+  position: absolute;
+  top: 12%;
+  transform: rotate(-43deg);
+}
+ 
+.circle .three {
+  left: -5%;
+  bottom: 36%;
+  position: absolute;
+  transform: rotate(-107deg);
+}
+
+
+ 
+.circle .four {
+  left: 18%;
+  position: absolute;
+  bottom: 6%;
+  transform: rotate(-180deg);
+}
+ 
+.circle .five {
+  left: 61%;
+  top: 52%;
+  position: absolute;
+  transform: rotate(105deg);
+}
+ 
+  .one>img, .two>img, .three>img, .four>img, .five>img {
+   width: 100%;
+   height: 50px;
+   object-fit: contain;
+ 
+ }
+
+ 
+ 
+ .pop-up-content {
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+  /* border-radius: 0.5rem; */
+  position: absolute;
+  right: 208px;
+  bottom: -186px;
+  font-family: "Abril Fatface", cursive;
+  display: none;
+}
+}
+
 /* Media query for 420px */
 @media screen and (max-width: 420px) {
   .pin {
@@ -329,7 +427,7 @@ bottom: 10px;
   .wheel-stand {
     width: 300px;
     position: absolute;
-    left: 30px;
+    left: 115px;
     top: 485px;
 }
 
