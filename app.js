@@ -18,7 +18,7 @@ const prizes = [
   {
     id: 4,
     msg: "free hair wax cream",
-  }
+  },
 ];
 
 var activeBtn = false;
@@ -31,14 +31,11 @@ function randomNum() {
   return prizeNum;
 }
 
-
-
 function removeClass() {
   prize = randomNum();
 
   document.getElementById("spinner").classList.remove("spin");
   document.getElementById("spin-btn").classList.remove("disabled");
-
 
   document.getElementById("spinner").style.transform =
     "rotate(" + prize * 30 + "deg)";
@@ -47,7 +44,6 @@ function removeClass() {
 
   setTimeout(function () {
     document.getElementById("spin-btn").disabled = false;
-    // document.getElementById("arrow").classList.add("float");
     activeBtn = false;
   }, 2000);
 
@@ -61,8 +57,6 @@ function spin() {
   activeBtn = true;
   audio.play();
 
-  //   document.getElementById("spinner").classList.remove("shake");
-  // document.getElementById("arrow").classList.remove("float");
   document.getElementById("spinner").classList.add("spin");
   document.getElementById("spin-btn").disabled = true;
 
